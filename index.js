@@ -15,7 +15,7 @@ function findOrAdd(currentNode, newNode) {
 
     if(newNode.data < currentNode.data) {
         if(currentNode.left) {
-            return findOrAdd(currentNode.left, newNode) 
+            return findOrAdd(currentNode.left, newNode)
         } else {
             return currentNode.left = newNode
         }
@@ -32,7 +32,7 @@ function findOrAdd(currentNode, newNode) {
 
 function max(currentNode) {
     if(currentNode.right) {
-       return max(currentNode.right)
+        return max(currentNode.right)
     } else {
         return currentNode
     }
@@ -40,7 +40,7 @@ function max(currentNode) {
 
 function min(currentNode) {
     if(currentNode.left) {
-        return min(currentNode.left)
+        return max(currentNode.left)
     } else {
         return currentNode
     }
